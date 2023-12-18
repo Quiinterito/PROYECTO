@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>barb</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- sweet alert 2 css -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- awesome fontfamily -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <!-- body -->
+
+  <body class="main-layout">
+    <!-- loader  -->
+    <div id="loader" class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="" /></div>
+    </div>
+    <!-- end loader -->
+
+    <div id="content">
+      <!-- login -->
+      <div id="login" class="login">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="logo">
+              <a href="index.html"><img src="images/logo.png" alt="#" /> </a>
+            </div>
+            <div class="container">
+                <div
+                  class="col-xl-6 col-lg-6 col-md-6 col-sm-12 offset-xl-6 offset-lg-6 offset-md-6"
+                >
+                  <div class="title">
+                    <h2>Inicia<strong class="white"> sesión</strong></h2>
+                  </div>
+                  <!-- <form action="./home.html"> -->
+                  <form>
+                    <div class="row">
+                      <div class="col-sm-12 form-group">
+                        <label for="email" class="text-white"
+                          >Correo electrónico</label
+                        >
+                        <input
+                          class="form-control"
+                          placeholder="Correo electrónico"
+                          type="text"
+                          id="email"
+                        />
+                      </div>
+                      <div class="col-sm-12 form-group">
+                        <label for="password" class="text-white"
+                          >Contraseña</label
+                        >
+                        <input
+                          class="form-control"
+                          placeholder="Contraseña"
+                          type="password"
+                          id="password"
+                        />
+                      </div>
+                      <div class="col-sm-12">
+                        <button type="button" id="btn-login" class="btn btn-send">Ingresar</button>
+                      </div>
+                      <div class="col-sm-12 pt-4 d-flex justify-content-center">
+                        <a class="signup-text" href="sign-up.html">Crear una cuenta</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end login -->
+
+      <!-- footer -->
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="logo">
+                  <a href="index.html"
+                    ><img src="images/logo.png" alt="logo"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="address">
+                  <p>
+                    Dirección: Calle 49 #85E-60, Cali, Valle del Cauca
+                    <br />
+                    Teléfono: 3212655785
+                    <br />
+                    Correo electrónico: faiber-jesus@hotmail.com
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <ul class="lik">
+                  <li><img src="images/fb.png" alt="#" /></li>
+                  <li><img src="images/tw.png" alt="#" /></li>
+                  <li><img src="images/you.png" alt="#" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="container">
+              <p>
+                © 2023 All Rights Reserved.
+                <a href="https://github.com/Quiinterito/PROYECTO-FINAL.git">
+                  Faiber Jesus Diaz Quintero
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+
+    <div class="overlay"></div>
+    <!-- Javascript files-->
+    <script src="js/libraries/jquery.min.js"></script>
+    <script src="js/libraries/bootstrap.bundle.min.js"></script>
+    <script src="js/libraries/sweetalert2.min.js"></script>
+    <script src="js/libraries/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

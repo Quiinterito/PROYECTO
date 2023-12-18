@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>barb</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- owl css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- sweet alert 2 css -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- awesome fontfamily -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body class="main-layout">
+    <!-- loader  -->
+    <div id="loader" class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="" /></div>
+    </div>
+    <!-- end loader -->
+
+    <!-- sidebar  -->
+    <div class="sidebar">
+      <nav id="sidebar">
+        <div id="dismiss">
+          <i class="fa fa-arrow-left"></i>
+        </div>
+
+        <ul class="components">
+          <li>
+            <a href="home.html">inicio</a>
+          </li>
+          <li>
+            <a href="schedule-appointment.html">Agendar cita</a>
+          </li>
+          <li>
+            <a href="schedule.html">Consultar agenda</a>
+          </li>
+          <!-- <li>
+            <a href="invoice.html">Facturación</a>
+          </li> -->
+        </ul>
+      </nav>
+    </div>
+    <!-- end sidebar  -->
+
+    <div id="content">
+      <!-- header -->
+      <header>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-1 d-flex justify-content-center">
+              <button type="button" id="sidebarCollapse">
+                <img src="images/menu_icon.png" alt="Menu Icon" />
+              </button>
+            </div>
+            <div class="col-md-3 d-flex align-items-center">
+              <div class="full">
+                <a class="logo" href="home.html"
+                  ><img src="images/logo.png" alt="#"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="full">
+                <div class="right_header_info">
+                  <ul>
+                    <li>
+                      <div class="dropdown show mr-5">
+                        <img
+                          class="user-picture"
+                          src="images/user.png"
+                          alt="#"
+                        />
+                        <a
+                          class="btn dropdown-toggle"
+                          href="#"
+                          role="button"
+                          id="dropdownMenuLink"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          User
+                        </a>
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <a
+                            class="dropdown-item user-dropdown"
+                            href="user.html"
+                          >
+                            Editar usuario
+                          </a>
+                          <button
+                            type="button"
+                            id="btn-logout"
+                            class="dropdown-item user-dropdown"
+                          >
+                            Cerrar sesion
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <!-- form -->
+      <div class="container p-5">
+        <div class="card p-5">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="ourheading col-sm-12">
+                <h2>Editar<strong class="white"> Usuario</strong></h2>
+              </div>
+              <form>
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label for="name">Nombres</label>
+                      <input
+                        class="form-control"
+                        placeholder="Nombres"
+                        type="text"
+                        id="name"
+                      />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="surname">Apellidos</label>
+                      <input
+                        class="form-control"
+                        placeholder="Apellidos"
+                        type="text"
+                        id="surname"
+                      />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="phone">Teléfono</label>
+                      <input
+                        class="form-control"
+                        placeholder="Teléfono"
+                        type="number"
+                        id="phone"
+                      />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="email">Correo electrónico</label>
+                      <input
+                        class="form-control"
+                        placeholder="Correo electrónico"
+                        type="email"
+                        id="email"
+                        disabled
+                      />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="user">Usuario</label>
+                      <input
+                        class="form-control"
+                        placeholder="Usuario"
+                        type="text"
+                        id="user"
+                        disabled
+                      />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="date">Fecha de nacimiento</label>
+                      <input
+                        class="form-control"
+                        placeholder="dd/mm/yyyy"
+                        type="date"
+                        id="date"
+                      />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="gender">Sexo</label>
+                      <select class="form-control" id="gender">
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                        <option>Otro</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6 ">
+                      <label for="btn-show-update-password">¿Desea cambiar su contraseña?</label>
+                    <div class="d-flex justify-content-end">
+                      <button
+                        type="button"
+                        id="btn-show-update-password"
+                        class="btn btn-send w-100"
+                      >
+                        Cambiar Contraseña
+                      </button>
+                    </div>
+                  </div>
+                    <div class="col-sm-6">
+                      <button
+                        type="button"
+                        id="btn-update-user"
+                        class="btn btn-send"
+                      >
+                        Guardar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end form -->
+
+      <!-- footer -->
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="logo">
+                  <a href="index.html"
+                    ><img src="images/logo.png" alt="logo"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="address">
+                  <p>
+                    Dirección: Calle 49 #85E-60, Cali, Valle del Cauca
+                    <br />
+                    Teléfono: 3212655785
+                    <br />
+                    Correo electrónico: faber-jesus@hotmail.com
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <ul class="lik">
+                  <li><img src="images/fb.png" alt="#" /></li>
+                  <li><img src="images/tw.png" alt="#" /></li>
+                  <li><img src="images/you.png" alt="#" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="container">
+              <p>
+                © 2023 All Rights Reserved.
+                <a href="https://github.com/Quiinterito/PROYECTO-FINAL.git">
+                  Faiber Jesus Diaz Salcedo
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+
+    <div class="overlay"></div>
+    <!-- Javascript files-->
+    <script src="js/libraries/jquery.min.js"></script>
+    <script src="js/libraries/popper.min.js"></script>
+    <script src="js/libraries/bootstrap.bundle.min.js"></script>
+    <script src="js/libraries/sweetalert2.min.js"></script>
+    <script src="js/libraries/owl.carousel.min.js"></script>
+    <script src="js/libraries/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
